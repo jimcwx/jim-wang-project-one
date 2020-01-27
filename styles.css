@@ -1,0 +1,599 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none;max-width: 100%;}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+html {
+    font-size: 62.5%; /* 10px */
+    
+}
+
+body {
+    font-size: 1.6rem;
+    position: relative;
+    
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* STRIPPING STYLES */
+body, 
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Here are some global rules and font sizes */
+.wrapper {
+    max-width: 1078px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 13rem;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 29px;
+    
+    
+}
+
+button {
+    background-color: #E7A8E6;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+
+/* color guide
+Accent colour
+#E7A8E6
+
+Pale grey
+#F0F5FF
+
+White
+#FCFCFC
+
+Grey
+#D8D8D8
+
+*/
+
+
+
+
+
+
+/* Here begins the of the styles for the hero page */
+
+header {
+    background-image: url(shutter-assets/asset-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fcfcfc;
+}
+
+.topBar {
+    padding: 30px 20px;
+    
+}
+
+.leftLogo {
+    float:left;
+}
+
+.navigation {
+    float: right;
+    position: relative;
+}
+
+.navigation li {
+    float: left;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+
+
+header .fa-bars{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-size: 1.5rem;
+    visibility: hidden;
+    font-size: 3rem;
+}
+
+.icons {
+    position: relative;
+    text-align: right;
+    right: 20px;
+    margin: 20vh 0;
+}
+
+.icons li {
+    margin: 20px 0;
+}
+
+.mainMessage h2 {
+    font-family: 'Lato', serif;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+
+.mainMessage {
+    
+    position: absolute;
+    left: 50%;
+    margin-left: -223px;
+    top: 60vh;
+    
+}
+
+/* Here begins the stylings for the about section */
+
+.about {
+    background-color: #f0f5ff;
+    text-align: center;
+    color: #1F2022;
+}
+
+.about p {
+    margin: 3% 20%;
+}
+
+.about .wrapper {
+    padding: 10% 0;
+}
+
+/* Here begins the stylings for the random pictures section */
+
+
+
+.randomImg .wrapper {
+    padding: 5vh 0;
+}
+
+.randomImg .imgContainer {
+    float: left;
+    width: calc(100%/3);
+    padding: 10px;
+}
+
+/* Here begins the stylings for the middle of page navigation section */
+
+.middleNav {
+    background-image: url(shutter-assets/asset-5.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fcfcfc;
+}
+
+.middleNav nav {
+    text-align: center;
+}
+
+.middleNav li {
+    display: inline-block;
+}
+
+
+.iconTextPair {
+    text-align: center;
+    padding: 20px;
+    margin: 10vh 20px;
+}
+
+.iconTextPair i {
+    font-size: 3.5rem;
+}
+
+/* Here begins the stylings for the blog section */
+
+/* Here beings the stylings for the top blog */
+
+
+
+.blogTop {
+    background: #fcfcfc;
+    margin: 10vh;
+}
+
+.blogTop .imgContainer,
+.blogTop .textBox {
+    float: left;
+}
+
+.blogTop .imgContainer {
+    width: 25%;
+    padding: 20px 0;
+}
+
+.blogTop .textBox {
+    width: 75%
+}
+
+.blogTop h2 {
+    padding: 20px 0 20px 20px;
+}
+
+.blogTop p {
+    padding: 0px 0px 10px 20px;
+}
+
+.blogTop button {
+    margin-left: 20px;
+}
+
+/* Here begings the stylings for the middle blog */
+
+.blogMiddle,
+.blogBottom {
+    background:#F0F5FF;
+}
+
+.blogMiddle .imgContainer{
+    float: right;
+    width: 50%;
+}
+
+.blogMiddle .textBox {
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding: 2vh 0 2vh 11%;
+    height: auto;
+}
+
+
+.blogMiddle h2,
+.blogMiddle p,
+.blogBottom h2,
+.blogBottom p{
+    padding:20px;
+}
+
+.blogMiddle button {
+    margin-right: 20px;
+}
+
+/* Here begins the styling for the bottom blog  */
+
+.blogBottom .imgContainer {
+    float: left;
+    width: 50%;
+}
+
+.blogBottom .textBox {
+    float: right;
+    width: 50%;
+    text-align: left;
+    padding: 2vh 11% 2vh 0;
+    height: auto;
+}
+
+.blogBottom button {
+    margin-left: 20px;
+}
+
+/* Here begins the styling for the contacts section */
+
+.contacts {
+    background: rgb(44, 43, 43);
+    /* I used a different color code than the ones given in the design here because It just didn't look like the right color */
+    color: #fcfcfc;
+    position: relative;
+    padding: 5vh 0;
+}
+
+
+
+.contacts h3 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    
+    font-size: 2.5rem;
+}
+
+.contactContainer {
+    float: left;
+    width: 25%;
+    
+}
+
+
+
+.formContainer {
+    float: left;
+    text-align: center;
+    width: 50%
+
+}
+
+
+
+.contacts nav {
+    float: right;
+    width: 25%;
+    text-align: right;
+}
+
+.contacts a {
+    display: block;
+    padding: 5px 0 5px 5px;
+}
+
+.contacts nav a {
+    
+    text-transform: uppercase;
+    padding: 5px 0 5px 5px;
+}
+
+
+
+input[type="email"] {
+    color: #000000;
+    padding: 15px 30px;
+    width: calc(100% - 169px);
+    border: none;
+    font-size: 18px;
+    display: block;
+    float: left;
+}
+
+.formContainer button {
+    float: left;
+}
+
+.contactContainer h3,
+
+.contactContainer p,
+.formContainer h3,
+.formContainer p {
+    padding: 5px;
+}
+
+/* Here beings the stylings for the footer section */
+
+.copyRight {
+    background: black;
+    color: #d8d8d8;
+}
+
+footer p {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+/* Here beings the responsive design section */
+
+@media (max-width: 1090px) {
+    
+    .blogMiddle .textBox {
+        padding: 1vh 0 1vh 4%;
+    }
+    
+    .blogMiddle h2
+    {
+        padding: 5px 20px 5px 5px;
+    }
+    
+    .blogBottom h2 {
+        padding: 5px 5px 5px 20px;
+    }
+    
+    .blogBottom .textBox {
+        padding: 1vh 4% 1vh 0;
+    }
+    
+    
+}
+
+@media (max-width: 905px) {
+    .blog .imgContainer,
+    .blog .textBox {
+        float: none;
+        width: 100%
+    }
+
+    .blogTop {
+        margin: 5% 30px 5% 30px;
+    }
+
+    .blog h2 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .blogMiddle .textBox,
+    .blogBottom .textBox{
+        padding: 1vh 0;
+    }
+
+    .blogMiddle p,
+    .blogBottom p {
+        text-align: center;
+    }
+
+
+    .blog button {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+@media (max-width: 864px) {
+    .iconTextPair {
+        margin: 3vh 20px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+    .navigation a {
+        display: none;
+    }
+
+    header .fa-bars {
+        visibility:visible;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .navigation li {
+        display:none;
+    }
+
+    .mainMessage {
+        top: 50vh;
+    }
+
+    .about p {
+        margin: 5%;
+    }
+
+    .randomImg .wrapper {
+        padding: 0;
+    }
+
+    .randomImg .imgContainer {
+        padding: 0;
+    }
+
+    .middleNav {
+        background: rgb(44, 43, 43);
+        /* here I used the same shade of black I used earlier with the same reasoning */
+    }
+
+    .middleNav li {
+        display: block;
+    }
+
+    .contacts {
+        position: relative;
+        padding-top: calc(5vh + 167.85px);
+    }
+
+    .contactContainer,
+    .contacts nav {
+        width: 50%;
+        text-align: center;
+    }
+
+    
+
+
+    .formContainer {
+        float: none;
+        position: absolute;
+        width: 100%;
+        top: 20px;
+        padding: 0 4%;
+    }
+
+    .formContainer input[type="email"] {
+        width: 100%;
+    }
+    .formContainer button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+}
+
+@media (max-width:550px) {
+    .randomImg .wrapper div:last-child {
+        display: none;
+    }
+
+    .randomImg .imgContainer {
+        width: 50%;
+    }
+
+    .contacts {
+        
+        padding-top: calc(5vh + 200px);
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 9rem;
+        
+    }
+
+    .mainMessage {
+        margin-left: -159.4px;
+    }
+}
+
+
+
+
+
